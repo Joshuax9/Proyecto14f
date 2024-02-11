@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿QUIERES SER MI NOVIA? ❤️</title>
+    <style>
+  .body {
+    background-color: crimson;
+    text-align: center
+  }
+  .body__title{
+   color: aliceblue;
+  }
+  .body__img{
+    border-radius: 20%;
+  }
+    </style>
+</head>❤️
+<body class="body">
+    <h1 class="body__title">¿QUIERES SER MI NOVIA? ❤️</h1>
+    <img src="Imagenes/Nosotros.jpg" alt="Nosotros ❤️" class="body__img">
+    <button id="Yes">Si quiero</button>
+    <button id="No">No quiero</button>
+    <audio controls>
+        <source src="musica/Nuestra cancion.mp3" type="audio/mp3">
+
+    <script>
+        const vuttonSi = document.getElementById('Yes');
+        const vuttonNo = document.getElementById('No');
+
+        const Ahorasomosnovios = () => {
+            alert('Con ésta mano yo sostendré tus anhelos; tu copa nunca estará vacia, porque yo seré tu vino; con esta vela alumbraré tu camino en la oscuridad..');
+        };
+        const Novasadecirno = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+    vuttonSi.addEventListener('click', Ahorasomosnovios);
+    vuttonNo.addEventListener('mouseover', Novasadecirno);
+    </script>
+
+</body>
+</html>
